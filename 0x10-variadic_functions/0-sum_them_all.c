@@ -6,10 +6,10 @@
  * Return: sum of its parameters.
  */
 int sum_them_all(const unsigned int n, ...)
-{	
+{
+	va_list ptr_varlist;
 	unsigned int i;
 	int sum = 0;
-	va_list ptr_varlist;
 
 	if (n == 0)
 		return (0);
